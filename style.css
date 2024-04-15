@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --border: 1px solid #ffffff1a;
+  font-size: 62.5%;
+}
+
+body,
+table,
+input,
+button {
+  font: 300 1.6rem/140% 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #121214;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 2rem 3.2rem;
+}
+
+header {
+  padding: 2rem 0;
+}
+
+form {
+  border: var(--border);
+  border-inline: none;
+  padding: 2rem 0;
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset > div {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.input-wrapper {
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+
+  border: var(--border);
+  border-radius: 1.0rem;
+
+  padding: .8rem 1.2rem;
+
+  font: 400 1.4rem/150% 'Roboto', sans-serif;
+  color: #C4C4CC;
+}
+
+input {
+  all: unset;
+}
+
+fieldset legend,
+section h2 {
+  font: 700 1.6rem/140% 'Roboto', sans-serif;
+  color: #E1E1E6;
+  padding-bottom: 16px;
+}
+
+fieldset button {
+  width: fit-content;
+  background: #F48F56;
+
+  border: 0;
+  border-radius: 1rem;
+  padding: .7rem 2rem;
+
+  font: 700 1.2rem/2.4rem 'Roboto', sans-serif;
+  color: #00292E;
+
+  cursor: pointer;
+}
+
+fieldset button:hover {
+  background: #f37c37;
+}
+
+.participants-list {
+  padding: 2rem 0;
+}
+
+.participants-list > div {
+  border: var(--border);
+  border-radius: .8rem;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table thead {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+}
+
+thead th,
+tbody td {
+  padding: 1.2rem 1.6rem;
+}
+
+tbody td {
+  border-top: var(--border);
+
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  color: #c4c4cc;
+}
+
+tbody td strong {
+  color: white;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  font-weight: 600;
+}
+
+tbody td small {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+
+tbody td button {
+  all: unset;
+  color: #9FF9CC;
+
+  cursor: pointer;
+}
+
+tbody td button:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 640px) { 
+  fieldset > div {
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  fieldset button {
+    width: 100%;
+  }
+}
